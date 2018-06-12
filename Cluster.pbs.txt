@@ -1,0 +1,7 @@
+#PBS -N nodos4
+#PBS -q phi-n5h24
+#PBS -l nodes=4:ppn=2
+#PBS -l walltime=0:30:00
+cd $PBS_O_WORKDIR
+module load  mpich
+mpiexec -n 8 ./Parallel
